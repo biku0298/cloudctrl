@@ -3,7 +3,7 @@ const locationButton = document.getElementById("location-button");
 
 
 async function getCurrentData(lat,long) {
-    const promise = await fetch(`http://api.weatherapi.com/v1/current.json?key=d6b8812b8c124eb2bbc63826250207&q=${lat},${long}&aqi=no`);
+    const promise = await fetch(`https://api.weatherapi.com/v1/current.json?key=d6b8812b8c124eb2bbc63826250207&q=${lat},${long}&aqi=no`);
     return await promise.json();
   };
 
